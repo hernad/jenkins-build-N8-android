@@ -30,5 +30,7 @@ docker run -t \
 
 #docker commit $CONTAINER_NAME android-dev:$GITHUB_USER
 
-cp -av apk/*.apk .
+
+cp -av build/$GITHUB_USER/$ANDROID_PROJECT/build/outputs/apk/*-modified-*.apk .
+
 
